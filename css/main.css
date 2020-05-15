@@ -335,14 +335,6 @@ margin-top: 0;
   color: white;
 }
 
-/**.faq .content-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 0 0 0;
-}**/
-
 .faq-content {
   display: flex;
   flex-flow: row wrap;
@@ -668,7 +660,63 @@ footer p {
 
   /**About pages styles**/
 
+  .mission {
+    width: 640px;
+  }
+
+  .mission h2 {
+    padding-right: 22px;
+  }
+
+  .mission-content {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .mission-content p {
+    width: 320px;
+    padding-right: 44px;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-flow: row  nowrap;
+  }
+
+  .contact-content div{
+    width: 320px;
+  }
+
   /**FAQ page styles**/
+
+
+  .faq .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    height: 200px;
+
+    flex-basis: 40%;
+    margin-bottom: 0;
+  }
+
+  .faq h2 {
+    font-size: 36px;
+ 
+  }
+
+  .faq h3 {
+    font-size: 14px;
+
+  }
+
+  .faq p {
+    margin-right: 30px;
+  }
+  
 
 }
 
