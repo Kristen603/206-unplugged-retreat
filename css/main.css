@@ -525,7 +525,8 @@ footer p {
   }
 
   header figure {
-    margin: 0 100px 0 -30px;
+    justify-content: start;
+    margin: 0;
   }
 
   header nav {
@@ -534,7 +535,7 @@ footer p {
   }
 
   header nav ul {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   header nav li {
@@ -551,9 +552,9 @@ footer p {
     height: 600px;
   }
 
-  .hero-area .content-wrapper {
+  /**.hero-area .content-wrapper {
     margin: 100px 65px;
-  }
+  }**/
 
   /*Aside*/
   aside {
@@ -590,6 +591,7 @@ footer p {
 
   .features-items {
     align-items: flex-start;
+    justify-content: space-between;
     padding: 0;
   }
 
@@ -658,9 +660,9 @@ footer p {
     width: 640px;
   }
 
-  /**About pages styles**/
+  /**About page styles**/
 
-  .mission {
+  .mission .content-wrapper{
     width: 640px;
   }
 
@@ -689,7 +691,6 @@ footer p {
 
   /**FAQ page styles**/
 
-
   .faq .content-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -698,19 +699,17 @@ footer p {
 
   .faq-content {
     height: 200px;
-
     flex-basis: 40%;
     margin-bottom: 0;
   }
 
   .faq h2 {
     font-size: 36px;
- 
+    width: 100%;
   }
 
   .faq h3 {
     font-size: 14px;
-
   }
 
   .faq p {
@@ -722,9 +721,138 @@ footer p {
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+
+div.content-wrapper {
+  max-width: 960px;
+  margin: 50px 0;
+}
+
+header .content-wrapper {
+  margin: 40px 0;
+}
+
+header figure {
+  margin-left: -100px;
 }
 
 
+/*Hero Area*/
+
+.hero-area {
+  height: 600px;
+}
+
+.hero-area h1 {
+  width: 720px;
+  font-size: 60px;
+}
+
+/*Aside*/
+
+aside {
+  height: 260px;
+}
+
+aside .content-wrapper {
+  margin: 50px 120px;
+  justify-content: center;
+}
+
+.form-description,
+.signup-form {
+  width: 33%; /*320px*/
+  margin: 0 80px;
+}
+
+/*Features*/
+
+.features {
+  height: 810px;
+}
+
+.features .content-wrapper {
+  margin: 90px 120px;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin: 10px 0;
+  width: 880px;
+}
+
+.features article {
+  margin: 40px 50px;
+  flex-basis: 200px;
+  width: 33%;
+}
+
+/*Reviews*/
+
+.reviews article div{
+  height: 630px;
+  /*width*/
+}
+
+.reviews .content-wrapper {
+  margin: 100px 120px;
+}
+
+.reviews h2 {
+  margin-bottom: 100px;
+}
+
+p.team-picture {
+  width: 480px;
+}
+
+p.team-review {
+  width: 480px;
+}
+
+/**About page styles**/
+.mission .content-wrapper{
+  width: 960px;
+  margin: 100px 120px;
+}
+
+.mission-content p {
+  width: 480px;
+  padding-right: 50px;
+}
+
+.contact-content div {
+  width: 960px;
+}
+
+.mission h2 {
+  width: 880px;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 880px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/**FAQ page styles**/
+
+.faq .content-wrapper {
+  height: 550px;
+  margin: 100px 120px;
+}
+.faq-content {
+  height: 130px;
+  flex-basis: 45%;
+  margin: 20px 0;
+}
+.faq p {
+  margin-right: 10px;
+}
+
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
