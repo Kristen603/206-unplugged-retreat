@@ -98,8 +98,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*General Styles*/
+
+html {
+  font-size: 16px;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul, 
+ol {
+  list-style-type: none;
+
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+
+}
+
+/*Content-Wrapper*/
+
 div.content-wrapper {
-  /**display: flex;**/
   width: 90%;
   margin: 50px 0;
 }
@@ -172,8 +227,6 @@ header nav li {
 }
 
 header nav li a {
-  text-decoration: none;
-  color: white;
 }
 
 
@@ -344,21 +397,15 @@ margin-top: 0;
 
 .faq h2 {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
 }
 
 .faq h3 {
   margin-top: 50px;
   margin-bottom: 18px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
 }
 
 .faq p {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
 }
 /**Footer styles**/
 
@@ -704,7 +751,6 @@ footer p {
   }
 
   .faq h2 {
-    font-size: 36px;
     width: 100%;
   }
 
@@ -775,7 +821,6 @@ aside .content-wrapper {
 }
 
 .features h2 {
-  font-size: 36px;
   margin: 10px 0;
   width: 880px;
 }
@@ -912,7 +957,7 @@ p.team-review {
     orphans: 3;
     widows: 3;
   }
-  h2,
+  ,
   h3 {
     page-break-after: avoid;
   }
