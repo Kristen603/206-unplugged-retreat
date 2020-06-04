@@ -109,6 +109,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed
 }
 
 ul, 
@@ -126,12 +127,14 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
   font-size: 1.125em;
+  font-weight: 500;
 }
 
 p {
@@ -160,7 +163,7 @@ div.content-wrapper {
 }
 
 
-/*---------Base Header - Footer Styles-------------*/
+/*---------Base Header - Footer Style-------------*/
 
 header, 
 footer {
@@ -169,7 +172,6 @@ footer {
   align-items: center;
   flex-flow: row wrap;
   background-color: #202322;
-  color: white;
 }
 
 /**Header Styles**/
@@ -198,6 +200,7 @@ header img {
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 5px 0 5px 0;
@@ -211,7 +214,8 @@ header nav {
   width: 60%;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125em;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -224,10 +228,9 @@ header nav ul {
 header nav li {
   list-style: none;
   padding: 0 50px;
+  font-size: 1.125em;
 }
 
-header nav li a {
-}
 
 
 /***Mobile Styles- Homepage***/
@@ -243,10 +246,10 @@ header nav li a {
 
 
 .hero-area h1 {
-  position: absolute;
-  color: white;
-  margin: 0;
-  text-align: left;
+  font-size: 2.25em;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .hero-area img {
@@ -263,11 +266,37 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #527158;
-  padding: 30px 0;
+  /*padding: 30px 0;*/
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input [type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input [type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20x;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif ;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
-div.form-description {
+/*div.form-description {
   padding: 0;
 }
 
@@ -281,7 +310,7 @@ div.form-description {
 
 .signup-form h3{
   margin: 18px 0;
-}
+}*/
 
 /*Features*/
 
@@ -290,7 +319,6 @@ div.form-description {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #202322;
-  color: white;
 }
 
 
@@ -310,6 +338,7 @@ div.form-description {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -330,6 +359,7 @@ div.form-description {
 .reviews h2 {
 margin-bottom: 40px;
 margin-top: 0;
+line-height: 1;
 }
 
 .reviews h3 {
@@ -351,7 +381,6 @@ margin-top: 0;
   justify-content: center;
   flex-flow: row wrap;
   background-color: #527158;
-  color: white;
 }
 
 .mission h2 {
@@ -364,7 +393,6 @@ margin-top: 0;
   justify-content: center;
   flex-flow: row wrap;
   background-color: #2a423a;
-  color: white;
 }
 
 .contact-section h2 {
@@ -385,32 +413,33 @@ margin-top: 0;
   align-items: center;
   justify-content: center;
   background-color: #527158;
-  color: white;
+}
+
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .faq-content {
-  display: flex;
-  flex-flow: row wrap;
   margin-bottom: 50px;
-  padding-right: 20px;
 }
 
 .faq h2 {
-  margin: 0;
+  line-height: 1;
+  margin-bottom: 40px;
 }
 
-.faq h3 {
-  margin-top: 50px;
-  margin-bottom: 18px;
-}
-
-.faq p {
-  margin: 0;
+.faq h4 {
+  line-height: 1.333;
 }
 /**Footer styles**/
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -437,27 +466,22 @@ footer h3 {
 
 footer .contact {
   margin-bottom: 50px;
-  /*display: flex;
-  align-items: center;
-  flex-flow: column wrap;*/
-  text-align: center;
+  /*text-align: center;*/
 }
 
 footer .social {
-  text-align: center;
+  /*text-align: center;*/
 
 }
 
 footer .copyright {
   margin: 20px 0;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 footer p {
   margin: 0;
 }
-
-
 
 
 
@@ -556,10 +580,23 @@ footer p {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 
+  /*General styles*/
   div.content-wrapper {
     max-width: 640px; /*83%*/
     margin: 100px 0;
   }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  /*Header*/
   header {
     justify-content: space-evenly;
     padding: 0;
@@ -574,10 +611,11 @@ footer p {
   header figure {
     justify-content: start;
     margin: 0;
+    /*width: 30%*;*/
   }
 
   header nav {
-      width: 160px;
+      width: 20%;
       margin: 0;
   }
 
@@ -599,34 +637,30 @@ footer p {
     height: 600px;
   }
 
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
   /**.hero-area .content-wrapper {
     margin: 100px 65px;
   }**/
 
   /*Aside*/
-  aside {
-    padding: 0;
-    height: 240px;
-  }
 
   aside .content-wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-between;
     margin: 50px 65px;
   }
 
-  .form-description {
+  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form {
     width: 40%;
-  }
-
-  .signup-form {
-    width: 40%;
-  }
-
-  .signup-form h3 {
-    margin-top: 0;
+    margin: 0;
   }
 
   /*Features*/
@@ -634,6 +668,10 @@ footer p {
   .features {
     flex-flow: row nowrap;
     height: 860px;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
   }
 
   .features-items {
@@ -660,7 +698,7 @@ footer p {
   }
 
   .reviews h2 {
-    width: 100%;
+    width: 85%;
     margin-bottom: 65px;
   }
 
@@ -668,10 +706,12 @@ footer p {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    width: 49%;
   }
 
   .reviews h3 {
     margin: 0;
+    width: 75%;
   }
 
   p.team-picture {
@@ -704,7 +744,11 @@ footer p {
   }
 
   footer .copyright {
-    width: 640px;
+    width: 100%;
+  }
+
+  footer p {
+    line-height: 1.285;
   }
 
   /**About page styles**/
@@ -723,7 +767,7 @@ footer p {
   }
 
   .mission-content p {
-    width: 320px;
+    width: 45%;
     padding-right: 44px;
   }
 
@@ -736,6 +780,10 @@ footer p {
     width: 320px;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /**FAQ page styles**/
 
   .faq .content-wrapper {
@@ -746,7 +794,7 @@ footer p {
 
   .faq-content {
     height: 200px;
-    flex-basis: 40%;
+    flex-basis: 45%;
     margin-bottom: 0;
   }
 
@@ -762,6 +810,11 @@ footer p {
     margin-right: 30px;
   }
   
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 
 }
 
@@ -772,6 +825,26 @@ div.content-wrapper {
   max-width: 960px;
   margin: 50px 0;
 }
+
+header {
+  padding: 15px 0;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
+
+/*Header*/
 
 header .content-wrapper {
   margin: 40px 0;
@@ -789,8 +862,8 @@ header figure {
 }
 
 .hero-area h1 {
-  width: 720px;
-  font-size: 60px;
+  width: 60%;
+  font-size: 3.75em;
 }
 
 /*Aside*/
@@ -810,6 +883,10 @@ aside .content-wrapper {
   margin: 0 80px;
 }
 
+.form-description p {
+  font-size: 1.125em;
+}
+
 /*Features*/
 
 .features {
@@ -822,13 +899,12 @@ aside .content-wrapper {
 
 .features h2 {
   margin: 10px 0;
-  width: 880px;
+  width: 90%;
 }
 
 .features article {
   margin: 40px 50px;
-  flex-basis: 200px;
-  width: 33%;
+  flex-basis: 33%;
 }
 
 /*Reviews*/
@@ -854,6 +930,12 @@ p.team-review {
   width: 480px;
 }
 
+/*Footer*/
+
+footer h4 {
+  font-size: 1.875em;
+}
+
 /**About page styles**/
 .mission .content-wrapper{
   width: 960px;
@@ -869,17 +951,16 @@ p.team-review {
   width: 960px;
 }
 
-.mission h2 {
-  width: 880px;
-}
-
+.mission h2,
 .contact-section .content-wrapper h2 {
-  width: 880px;
+  width: 95%;
   margin-bottom: 30px;
+  font-size: 3em;
 }
 
-
-
+.contact-content h4 {
+  font-size: 1.875em;
+}
 
 
 /**FAQ page styles**/
@@ -892,6 +973,17 @@ p.team-review {
   height: 130px;
   flex-basis: 45%;
   margin: 20px 0;
+}
+
+.faq h2 {
+  width: 100%;
+  font-size: 3em;
+}
+
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
 }
 .faq p {
   margin-right: 10px;
