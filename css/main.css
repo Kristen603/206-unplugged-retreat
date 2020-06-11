@@ -144,17 +144,14 @@ p {
 
 img {
   width: 100%;
-
-
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
   font-style: normal;
-
 }
 
 /*Content-Wrapper*/
@@ -180,6 +177,7 @@ footer {
 
 header {
   padding: 15px 0;
+  height: 120px; /*?*/
 }
 
 
@@ -195,17 +193,15 @@ header figure {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-header img {
-  width: 80%;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 .header-divider {
   background: #3a3a3a;
   width: 100%;
   height: 1px;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -215,7 +211,6 @@ header nav {
   flex-flow: row wrap;
   width: 60%;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
@@ -224,6 +219,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
+  margin: 0;
   width: 100%;
 }
 
@@ -248,6 +244,7 @@ header nav li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 500px;
 }
 
 
@@ -279,7 +276,7 @@ aside .form {
   margin-top: 30px;
 }
 
-input [type=text] {
+input[type=text] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
@@ -287,12 +284,12 @@ input [type=text] {
   padding: 1em;
 }
 
-input [type=button] {
+input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20x;
   background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif ;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
   color: #e2e3ed;
@@ -300,23 +297,6 @@ input [type=button] {
   text-align: center;
   text-transform: uppercase;
 }
-
-
-/*div.form-description {
-  padding: 0;
-}
-
-.form-description h3 {
-  margin: 0;
-}
-
-.form-description p {
-  margin: 18px 0;
-}
-
-.signup-form h3{
-  margin: 18px 0;
-}*/
 
 /*Features*/
 
@@ -608,20 +588,21 @@ footer p {
 
   /*Header*/
   header {
+    height: 100px;
     justify-content: space-evenly;
     padding: 0;
   }
 
   header .content-wrapper {
     flex-flow: row nowrap;
-    justify-content: space-evenly;
-    margin: 40px 65px;
+    justify-content: space-around;
+    margin: 30px 65px;
   }
 
   header figure {
     justify-content: start;
     margin: 0;
-    /*width: 30%*;*/
+    width: 30%;
   }
 
   header nav {
@@ -643,9 +624,9 @@ footer p {
 
   /*Hero Area*/
 
-  /*.hero-area {
-    height: 600px;
-  }*/
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -702,10 +683,10 @@ footer p {
 
   /*Reviews*/
 
-  .reviews .content-wrapper{
+  /*.reviews .content-wrapper{
     display: flex;
     flex-flow: row wrap;
-  }
+  }*/
 
   .reviews h2 {
     width: 85%;
@@ -716,19 +697,24 @@ footer p {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
+  }
+
+  .reviews article figure,
+  .reviews article div {
     width: 49%;
   }
+
 
   .reviews h3 {
     margin: 0;
     width: 75%;
   }
 
-  p.team-picture {
+ /* p.team-picture {
     width: 320px;
     margin: 0;
     padding: 0;
-  }
+  }*/
 
   p.team-review {
     width: 320px;
@@ -885,6 +871,7 @@ aside {
 aside .content-wrapper {
   margin: 50px 120px;
   justify-content: center;
+  ;
 }
 
 .form-description,
@@ -900,7 +887,7 @@ aside .content-wrapper {
 /*Features*/
 
 .features {
-  height: 810px;
+  min-height: 810px;
 }
 
 .features .content-wrapper {
@@ -921,7 +908,7 @@ aside .content-wrapper {
 
 .reviews article div{
   height: 630px;
-  /*width*/
+  width: 42%;
 }
 
 .reviews .content-wrapper {
