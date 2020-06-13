@@ -380,7 +380,7 @@ line-height: 1;
 .map figure {
   width: 100%;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 125%;
   overflow: hidden;
   position: relative;
 }
@@ -783,6 +783,10 @@ footer p {
     padding-right: 44px;
   }
 
+  .map figure {
+    padding-bottom:45.5%;
+  }
+
   .contact-content {
     display: flex;
     flex-flow: row  nowrap;
@@ -958,6 +962,10 @@ footer h4 {
 .mission-content p {
   width: 480px;
   padding-right: 50px;
+}
+
+.map figure {
+  padding-bottom:37.5%;
 }
 
 .contact-content div {
