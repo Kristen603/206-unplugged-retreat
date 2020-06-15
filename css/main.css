@@ -332,6 +332,11 @@ input[type=button] {
   margin: 0;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features article {
   width: 63%;
   padding: 10px;
@@ -674,7 +679,7 @@ footer p {
 
   .features {
     flex-flow: row nowrap;
-    height: 860px;
+    min-height: 860px;
   }
 
   .features h2 {
@@ -689,12 +694,12 @@ footer p {
 
   .features article {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    flex-flow: row nowrap ;
+    flex-flow: row wrap ;
     flex-basis: 190px;
     width: 30%;
-    margin: 60px 30px;
+    margin: 15px 30px;
   }
 
   /*Reviews*/
