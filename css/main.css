@@ -177,7 +177,7 @@ footer {
 
 header {
   padding: 15px 0;
-  height: 120px; /*?*/
+  /*height: 120px; */
 }
 
 
@@ -253,6 +253,7 @@ header nav li {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+  margin-top: 0;
 }
 
 .hero-area img {
@@ -272,6 +273,10 @@ aside {
   /*padding: 30px 0;*/
 }
 
+aside h3 {
+  margin-top: 0;
+}
+
 aside .form {
   margin-top: 30px;
 }
@@ -286,8 +291,8 @@ input[type=text] {
 
 input[type=button] {
   width: 100%;
-  padding: 20px 0;
-  margin-top: 20x;
+  padding: 15px 0;
+  margin-top: 20px;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -365,7 +370,7 @@ line-height: 1;
 .reviews p {
   padding: 10px 0;
   margin-bottom: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /**About page styles**/
@@ -618,14 +623,14 @@ footer p {
 
   /*Header*/
   header {
-    height: 100px;
-    justify-content: space-evenly;
+    /*height: 100px;*/
+    justify-content: space-around; 
     padding: 0;
   }
 
   header .content-wrapper {
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 30px 65px;
   }
 
@@ -638,10 +643,6 @@ footer p {
   header nav {
       width: 20%;
       margin: 0;
-  }
-
-  header nav ul {
-    justify-content: space-between;
   }
 
   header nav li {
@@ -679,10 +680,11 @@ footer p {
   }
 
   aside .content-wrapper .form-description, 
-  aside .content-wrapper .form {
+  aside .content-wrapper .signup-form {
     width: 40%;
     margin: 0;
   }
+ 
 
   /*Features*/
 
@@ -713,11 +715,6 @@ footer p {
 
   /*Reviews*/
 
-  /*.reviews .content-wrapper{
-    display: flex;
-    flex-flow: row wrap;
-  }*/
-
   .reviews h2 {
     width: 85%;
     margin-bottom: 65px;
@@ -736,15 +733,9 @@ footer p {
 
 
   .reviews h3 {
-    margin: 0;
+    margin: -5px 0 0 0;
     width: 75%;
   }
-
- /* p.team-picture {
-    width: 320px;
-    margin: 0;
-    padding: 0;
-  }*/
 
   p.team-review {
     width: 320px;
@@ -817,8 +808,6 @@ footer p {
   /**FAQ page styles**/
 
   .faq .content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
   }
 
@@ -880,11 +869,6 @@ header .content-wrapper {
   margin: 40px 0;
 }
 
-header figure {
-  margin-left: -100px;
-}
-
-
 /*Hero Area*/
 
 .hero-area {
@@ -941,7 +925,7 @@ aside .content-wrapper {
 /*Reviews*/
 
 .reviews article div{
-  height: 630px;
+  /*height: 630px;*/
   width: 42%;
 }
 
@@ -1084,7 +1068,7 @@ footer h4 {
     orphans: 3;
     widows: 3;
   }
-  ,
+  
   h3 {
     page-break-after: avoid;
   }
