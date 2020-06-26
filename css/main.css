@@ -177,7 +177,6 @@ footer {
 
 header {
   padding: 15px 0;
-  /*height: 120px; */
 }
 
 
@@ -491,26 +490,16 @@ footer h3 {
 
 footer .contact {
   margin-bottom: 50px;
-  /*text-align: center;*/
 }
 
-footer .social {
-  /*text-align: center;*/
-
-}
 
 footer .copyright {
   margin: 20px 0;
-  /*text-align: center;*/
 }
 
 footer p {
   margin: 0;
 }
-
-
-
-
 
 
 /* ==========================================================================
@@ -607,7 +596,7 @@ footer p {
 
   /*General styles*/
   div.content-wrapper {
-    max-width: 640px; /*83%*/
+    max-width: 640px; 
     margin: 100px 0;
   }
 
@@ -623,7 +612,7 @@ footer p {
 
   /*Header*/
   header {
-    /*height: 100px;*/
+    /*height: 100px; PSD height measurement*/
     justify-content: space-around; 
     padding: 0;
   }
@@ -664,10 +653,6 @@ footer p {
     line-height: 1;
     margin: 0;
   }
-
-  /**.hero-area .content-wrapper {
-    margin: 100px 65px;
-  }**/
 
   /*Aside*/
 
@@ -925,7 +910,7 @@ aside .content-wrapper {
 /*Reviews*/
 
 .reviews article div{
-  /*height: 630px;*/
+  /*height: 630px; PSD Measurement*/
   width: 42%;
 }
 
