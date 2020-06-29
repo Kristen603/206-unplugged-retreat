@@ -269,10 +269,18 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #527158;
-  /*padding: 30px 0;*/
+}
+
+aside .content-wrapper {
+  margin-top: 30px;
 }
 
 aside h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+aside p {
+  margin-bottom: 20px;
   margin-top: 0;
 }
 
